@@ -1,0 +1,6 @@
+{{childData}}
+<label >Enter Parent data</label>
+
+<input type="text" #ptext (keyup)="0">
+<p>Value from child component is</p>
+<app-child   childEvent()="childData=$event" [parentData]="ptext.value"></app-child>
